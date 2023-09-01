@@ -6,7 +6,7 @@ export default function Signup() {
     const [credentials, setCredentials] = useState({ name: "", email: "", password: "", geolocation: "" })
     const handleSubmit= async(e)=>{
          e.preventDefault()
-         const response = await fetch('http://localhost:5000/api/creatuser',{
+         const response = await fetch('https://gofoodbackend-7i1q.onrender.com/api/creatuser',{
             method: 'POST',
             headers: {
               'Content-Type': 'application/json'
